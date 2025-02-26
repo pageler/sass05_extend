@@ -1,0 +1,1 @@
+Exercise working with Sass extend.
