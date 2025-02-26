@@ -32,3 +32,64 @@ header {
     }
 }
 
+.container {
+    height: 100vh;
+
+    .cards {
+        @extend .flex-center;
+        flex-direction: row;
+
+        .card {
+            border: 0.6px solid rgb(168, 168, 168);
+            width: 500px;
+            height: 530px;
+            padding: 20px;
+            margin: 20px;
+            font-family: sans-serif;
+
+            .card-img {
+                background-image: url("https://images.unsplash.com/photo-1600335895229-6e75511892c8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+    
+            .img-two {
+                @extend .card-img;
+                background-image: url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            }
+    
+            .img-three {
+                @extend .card-img;
+                background-image: url("https://plus.unsplash.com/premium_photo-1676310055316-d73c9d5eeb51?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            }
+    
+            .img-four {
+                @extend .card-img;
+                background-image: url("https://images.unsplash.com/photo-1560180474-e8563fd75bab?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                background-position: center;
+            }
+
+            p {
+                margin-bottom: 2rem;
+                max-width: 300px;
+                line-height: 1.4;
+                color: rgb(96, 96, 96);
+            }
+
+            .card-title {
+                margin-bottom: 20px;
+                color: rgb(28, 28, 28);
+            }
+
+            .btn-primary {
+                text-decoration: none;
+                color: #515151;
+                border: 1px solid #515151;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
